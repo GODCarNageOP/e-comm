@@ -1,14 +1,12 @@
 {
   "name": "@repo/utils",
   "type": "module",
+  "private": true,
   "scripts": {
-    "dev": "tsc --watch",
-    "build": "tsc"
+    "lint": "eslint . --max-warnings 0"
   },
   "exports": {
-    "./cls": {
-      "default": "./dist/cls.js"
-    }
+    "./cls": "./src/cls.ts"
   },
   "devDependencies": {
     "@repo/typescript-config": "*",
