@@ -1,16 +1,19 @@
 {
-  "name": "monorepo",
+  "name": "ecommerce",
   "private": true,
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "prepare": "husky"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
     "turbo": "^2.0.6",
-    "typescript": "^5.4.5"
+    "typescript": "^5.5.3",
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2"
   },
   "engines": {
     "node": ">=18"
@@ -19,5 +22,9 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@typescript-eslint/parser": "^7.16.0",
+    "husky": "^9.0.11"
+  }
 }

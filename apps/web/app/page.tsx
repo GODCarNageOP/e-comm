@@ -1,11 +1,13 @@
 import Image from "next/image";
 import { Button } from "@repo/ui/button";
 import styles from "./page.module.css";
+import { cls } from '@repo/utils/cls';
+
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <main className={styles.main}>
+      <main className={cls(`${styles.main}`, "")}>
         <Image
           className={styles.logo}
           src="/next.svg"

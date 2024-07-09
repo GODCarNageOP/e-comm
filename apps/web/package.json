@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prerestart": "lint",
     "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
@@ -10,6 +11,7 @@
   },
   "dependencies": {
     "@repo/ui": "*",
+    "@repo/utils": "*",
     "react": "19.0.0-rc-f994737d14-20240522",
     "react-dom": "19.0.0-rc-f994737d14-20240522",
     "next": "15.0.0-rc.0"
@@ -17,6 +19,7 @@
   "devDependencies": {
     "@repo/eslint-config": "*",
     "@repo/typescript-config": "*",
+    "@typescript-eslint/parser": "^7.16.0",
     "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
